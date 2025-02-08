@@ -5,99 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Profesional</title>
     <style>
+        :root {
+            --primary-bg: #24253B;
+            --secondary-bg: #333042;
+            --primary-text: #FDFDFE;
+            --accent-color: #FA5661;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #24253B; /* Fondo principal */
-            color: #FDFDFE; /* Texto claro */
+            background-color: var(--primary-bg);
+            color: var(--primary-text);
         }
+
         header {
-            background-color: #333042; /* Fondo del header */
+            background-color: var(--secondary-bg);
             padding: 20px;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: #FDFDFE; /* Texto claro */
+            color: var(--primary-text);
         }
+
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333042; /* Fondo de la barra de navegación */
+            background-color: var(--secondary-bg);
             padding: 10px;
         }
+
         nav a {
-            color: #FDFDFE; /* Texto claro */
+            color: var(--primary-text);
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
         }
+
         nav a:hover {
-            color: #FA5661; /* Color de hover */
+            color: var(--accent-color);
         }
+
         .container {
             padding: 20px;
+            padding-bottom: 60px; /* Espacio para el footer */
         }
+
         .section {
             margin-bottom: 40px;
         }
+
         .section h2 {
             font-size: 2em;
-            border-bottom: 2px solid #FA5661; /* Línea decorativa */
+            border-bottom: 2px solid var(--accent-color);
             padding-bottom: 10px;
-            color: #FDFDFE; /* Texto claro */
+            color: var(--primary-text);
         }
+
         .about-content {
             display: flex;
             gap: 20px;
             align-items: center;
         }
+
         .about-text {
             flex: 1;
         }
+
         .about-text p {
             font-size: 1.1em;
             line-height: 1.6;
         }
+
         .about-image {
             flex: 1;
             text-align: right;
         }
+
         .about-image img {
             max-width: 100%;
             height: auto;
-            border-radius: 10px; /* Bordes redondeados para la imagen */
+            border-radius: 10px;
         }
+
         .project {
-            background-color: #333042; /* Fondo de los proyectos */
+            background-color: var(--secondary-bg);
             padding: 15px;
             margin-bottom: 20px;
             border-radius: 5px;
         }
+
         .project h3 {
             margin-top: 0;
-            color: #FDFDFE; /* Texto claro */
+            color: var(--primary-text);
         }
+
         .project a {
-            color: #FA5661; /* Color de enlace */
+            color: var(--accent-color);
             text-decoration: none;
         }
+
         .project a:hover {
             text-decoration: underline;
         }
+
         footer {
-            background-color: #333042; /* Fondo del footer */
+            background-color: var(--secondary-bg);
             padding: 10px;
             text-align: center;
-            position: fixed;
+            position: relative;
             width: 100%;
             bottom: 0;
         }
+
         footer p {
             margin: 0;
-            color: #FDFDFE; /* Texto claro */
+            color: var(--primary-text);
         }
     </style>
 </head>
@@ -116,17 +143,12 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>¡Bienvenido!</p>
-                    
                     <p>Soy Leandro Espinoza, Ingeniero Industrial graduado de la Universidad Católica de Córdoba, con experiencia en administración, logística y gestión de equipos. Me apasiona la optimización de procesos y la toma de decisiones estratégicas, y aspiro a especializarme en Project Management y Data Analytics.</p>
-                    
-                    <p>Combino mi conocimiento en liderazgo con habilidades analíticas en Python, SQL y Tableau para desarrollar soluciones innovadoras y orientadas a resultados. A lo largo de mi carrera, he liderado iniciativas que han mejorado la eficiencia operativa, optimizado flujos de trabajo y potenciado el rendimiento empresarial mediante la automatización y el análisis de datos. He diseñado e implementado KPIs, dashboards y estrategias de mejora continua, logrando reducir costos, agilizar procesos y fortalecer la toma de decisiones basada en datos.</p>
-                    
-                    <p>Mi enfoque une visión estratégica y capacidad técnica, permitiéndome impulsar proyectos con un alto impacto en la organización. Te invito a explorar mi portafolio, donde encontrarás proyectos que van desde la creación de dashboards interactivos hasta programación con Python, limpieza de datos y análisis exploratorio (EDA), cada uno diseñado para extraer el máximo valor de la información.</p>
-                    
-                    <p> Si deseas conocer más sobre mi trabajo, no dudes en contactarme o explorar mis proyectos a continuación. </p>
+                    <p>Combino mi conocimiento en liderazgo con habilidades analíticas en Python, SQL y Tableau para desarrollar soluciones innovadoras y orientadas a resultados. He liderado iniciativas que han mejorado la eficiencia operativa, optimizado flujos de trabajo y potenciado el rendimiento empresarial mediante la automatización y el análisis de datos.</p>
+                    <p>Te invito a explorar mi portafolio, donde encontrarás proyectos que van desde la creación de dashboards interactivos hasta programación con Python, limpieza de datos y análisis exploratorio (EDA).</p>
                 </div>
                 <div class="about-image">
-                    <img src="/Users/leolp/Downloads/lp.jpg" alt="Tu Nombre"> <!-- Cambia "tu-imagen.jpg" por la ruta de tu imagen -->
+                    <img src="/Users/leolp/Downloads/lp.jpg" alt="Leandro Espinoza">
                 </div>
             </div>
         </section>
@@ -134,23 +156,23 @@
             <h2>Proyectos</h2>
             <div class="project">
                 <h3>Dashboard Interactivo</h3>
-                <p>Un dashboard interactivo creado con [Tecnología].</p>
+                <p>Un dashboard interactivo creado con Tableau para visualizar datos de ventas y rendimiento.</p>
                 <a href="#">Ver Proyecto</a>
             </div>
             <div class="project">
-                <h3>Código de Ejemplo</h3>
-                <p>Un repositorio de código que muestra mis habilidades en [Lenguaje de Programación].</p>
+                <h3>Análisis de Datos con Python</h3>
+                <p>Un repositorio de código que muestra mis habilidades en Python, incluyendo limpieza de datos y análisis exploratorio (EDA).</p>
                 <a href="#">Ver Código</a>
             </div>
             <!-- Añade más proyectos según sea necesario -->
         </section>
         <section id="contact" class="section">
             <h2>Contacto</h2>
-            <p>Puedes contactarme a través de [Tu Email] o seguirme en [Redes Sociales].</p>
+            <p>Puedes contactarme a través de <a href="mailto:leandrosespinoza62@gmail.com">leandrosespinoza62@gmail.com</a> o seguirme en mis Redes Sociales.</p>
         </section>
     </div>
     <footer>
-        <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Leandro Salvador Espinoza. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
