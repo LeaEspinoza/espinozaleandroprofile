@@ -4,133 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Profesional</title>
-    <style>
-        :root {
-            --primary-bg: #24253B;
-            --secondary-bg: #333042;
-            --primary-text: #FDFDFE;
-            --accent-color: #FA5661;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--primary-bg);
-            color: var(--primary-text);
-        }
-
-        header {
-            background-color: var(--secondary-bg);
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: var(--primary-text);
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: var(--secondary-bg);
-            padding: 10px;
-        }
-
-        nav a {
-            color: var(--primary-text);
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-        }
-
-        .container {
-            padding: 20px;
-            padding-bottom: 60px; /* Espacio para el footer */
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            font-size: 2em;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
-            color: var(--primary-text);
-        }
-
-        .about-content {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .about-image {
-            flex: 1;
-            text-align: right;
-        }
-
-        .about-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .project {
-            background-color: var(--secondary-bg);
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-
-        .project h3 {
-            margin-top: 0;
-            color: var(--primary-text);
-        }
-
-        .project a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        .project a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: var(--secondary-bg);
-            padding: 10px;
-            text-align: center;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-        }
-
-        footer p {
-            margin: 0;
-            color: var(--primary-text);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Bienvenido a Mi Portfolio <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> </h1>
+        <h1> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Portfolio Personal - Ing. Leandro Espinoza <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> </h1>
     </header>
     <nav>
         <a href="#about">Sobre Mí</a>
@@ -139,26 +17,27 @@
     </nav>
     <div class="container">
         <section id="about" class="section">
-            <h2>Sobre Mí</h2>
+            <div class="section-header">
+                <h2>Sobre Mí</h2>
+            </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>¡Hola! 👋 Soy <strong>Leandro Espinoza</strong>, un apasionado por los datos y la optimización de procesos.</p>
-                    <p>Como <strong>Ingeniero Industrial</strong> graduado de la Universidad Católica de Córdoba, he desarrollado una sólida experiencia en administración, logística y gestión de equipos. Mi enfoque se centra en la <strong>toma de decisiones basada en datos</strong> y la mejora continua de procesos.</p>
+                    <p>Como <strong>Ingeniero Industrial</strong> graduado de la Universidad Católica de Córdoba, he desarrollado una sólida experiencia en administración, logística, gestión de pequeños proyectos y coordinación de equipos. Mi enfoque se centra en la <strong>toma de decisiones basada en datos</strong> y la mejora continua de procesos.</p>
                     <p>Actualmente, me especializo en <strong>Project Management</strong> y <strong>Data Analytics</strong>, combinando mis habilidades técnicas con mi capacidad de liderazgo para impulsar resultados innovadores.</p>
                     
                     <h3>🛠️ Habilidades Técnicas:</h3>
                     <ul>
-                        <li><strong>Python:</strong> Análisis de datos, automatización y visualización.</li>
+                        <li><strong>Python:</strong>Análisis de datos, automatización de procesos, scripting y visualización de datos</li>
                         <li><strong>SQL:</strong> Consultas avanzadas y gestión de bases de datos.</li>
                         <li><strong>Tableau y Looker Studio:</strong> Creación de dashboards interactivos.</li>
                         <li><strong>Pandas, Seaborn y Matplotlib:</strong> Limpieza y visualización de datos.</li>
-                        <li><strong>Google Sheets y Excel:</strong> Análisis y modelado de datos.</li>
+                        <li><strong>Google Sheets y Excel:</strong> Automatizaciones con Macros, Scripts, Análisis y modelado de datos.</li>
                     </ul>
         
                     <h3>🚀 ¿Qué me hace diferente?</h3>
                     <p>Combino mi experiencia en liderazgo con habilidades analíticas para desarrollar soluciones que no solo son técnicamente sólidas, sino también estratégicamente efectivas. Mi objetivo es transformar datos en decisiones que impulsen el crecimiento y la eficiencia.</p>
-        
-                    <a href="#projects" class="cta-button">Explora Mis Proyectos</a>
+                    <a href="https://raw.githubusercontent.com/LeaEspinoza/espinozaleandroprofile/main/Espinoza%20Leandro.pdf" download class="download-cv-button">📄 Descargar CV </a> <strong> | </strong>  <a href="https://raw.githubusercontent.com/LeaEspinoza/espinozaleandroprofile/main/Leandro%20Espinoza%20EN.pdf" download class="download-cv-button">📄 Download CV </a>
                 </div>
                 <div class="about-image">
                     <img src="https://wallpapers.com/images/high/man-adept-in-data-visualization-q4uiwqy2hehljr8l.webp" alt="Data Analytics" class="profile-image">
@@ -222,18 +101,28 @@
                     </p>
                 </strong> <a href="https://www.kaggle.com/code/leoespinoza/exploratory-data-analysis-of-netflix-movies" target="_blank">📑 Documentación del Proyecto - Kaggle</a>
                 </div>
-                <div class="project">
-                    <h3>       PRUEBITA    </h3>
-                    <p>Un repositorio de código que muestra mis habilidades en Python, incluyendo limpieza de datos y análisis exploratorio (EDA).</p>
-                    <a href="#">Ver Código</a>
-                </div>
-                <!-- Añade más proyectos según sea necesario -->
+                <!-- Añadir más projects -->
             </div>
         </section>
         <section id="contact" class="section">
             <h2>Contacto</h2>
-            <p>Puedes contactarme a través de <a href="mailto:leandrosespinoza62@gmail.com" style="color: #FA5661;">leandrosespinoza62@gmail.com</a> o seguirme en mis Redes Sociales.</p>
-        </section>
+            <div class="contact-content">
+                <p>¡No dudes en contactarme! Estoy siempre abierto a nuevas oportunidades, colaboraciones y conversaciones interesantes.</p>
+                <div class="contact-links">
+                    <a href="mailto:leandrosespinoza62@gmail.com" class="contact-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email" class="contact-icon">
+                        <span>leandrosespinoza62@gmail.com</span>
+                    </a>
+                    <a href="https://www.kaggle.com/leoespinoza" target="_blank" class="contact-link">
+                        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-512.png" alt="Kaggle" class="contact-icon">
+                        <span>Kaggle</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/leandro-s-espinoza/" target="_blank" class="contact-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="contact-icon">
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
         </section>
     </div>
     <footer>
