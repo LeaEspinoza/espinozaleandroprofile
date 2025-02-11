@@ -1,10 +1,11 @@
 :root {
-    --primary-bg: #DCC9A9; /* Fondo principal */
-    --secondary-bg: #4E6851; /* Fondo de secciones y acentos */
-    --primary-text: #2C3E2F; /* Texto principal */
-    --accent-color: #B83A2D; /* Botones, enlaces y elementos interactivos */
-    --light-text: #FFFFFF; /* Texto claro sobre fondos oscuros */
+    --primary-bg: #1E1E1E; /* Fondo principal (gris oscuro) */
+    --secondary-bg: #2D2D2D; /* Fondo de secciones y acentos (gris medio) */
+    --primary-text: #E0E0E0; /* Texto principal (gris claro) */
+    --accent-color: #FF6B6B; /* Botones, enlaces y elementos interactivos (rojo coral) */
+    --light-text: #FFFFFF; /* Texto claro sobre fondos oscuros (blanco) */
 }
+
 
 /* Estilos generales */
 body {
@@ -214,4 +215,138 @@ footer p {
 .download-cv-button:hover {
     background-color: var(--accent-color);
     color: var(--primary-text);
+}
+
+/* Estilos para la línea temporal */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--accent-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    width: 50%;
+    padding: 20px;
+    background-color: var(--secondary-bg);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+.timeline-date {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+    font-size: 1.5em;
+    color: var(--light-text);
+    margin-bottom: 10px;
+}
+
+.timeline-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline-content ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: var(--light-text);
+    line-height: 1.6;
+}
+
+.timeline-content ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.timeline-content h4 {
+    font-size: 1.2em;
+    color: var(--light-text);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(even) {
+        text-align: left;
+    }
+}
+
+/* Estilos para el apartado "¿Qué me hace diferente?" */
+.what-makes-me-different {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: var(--secondary-bg);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(184, 58, 45, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.what-makes-me-different:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(184, 58, 45, 0.5);
+}
+
+.what-makes-me-different h3 {
+    font-size: 1.8em;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.different-content {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--light-text);
+}
+
+.image-separator {
+    width: 100%; /* Ancho completo */
+    height: 2px; /* Grosor de la línea */
+    background-color: var(--accent-color); /* Color de la línea */
+    margin: 20px 0; /* Espacio arriba y abajo */
 }
